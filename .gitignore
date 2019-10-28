@@ -10,3 +10,4 @@ samples/country/video/*.mp4
 *.log
 venv/
 .vagrant/
+.DS_Store
