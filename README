@@ -1,0 +1,51 @@
+USEFUL/NECESARY COMMANDS
+
+(venv) pip install --upgrade tensorflow
+
+vagrant up/destroy/ssh
+
+virtualenv --system-site-packages -p python2.7 ./venv
+
+source ./venv/bin/activate  # sh, bash, ksh, or zsh
+
+(venv) cd /vagrant
+
+(venv) deactive
+
+(venv) pip install --upgrade pip
+
+(venv) pip list
+
+pip install --user tensorflow==2.0.0-rc0
+
+pip install --upgrade tensorflow
+
+pip install keras
+
+pip install opencv-contrib-python
+
+(venv) cd darknet && make
+
+(venv) bash get-networks.sh
+
+(venv) bash run.sh -i samples/test -o /tmp/output -c /tmp/output/results.csv
+bash run.sh -i samples/chile -o /tmp/output -c /tmp/output/results_chile.csv #test
+
+#train
+
+(venv) mkdir models
+(venv) create-model.py eccv models/eccv-model-scracth
+(venv) train-detector.py --model models/eccv-model-scracth --name my-trained-model --train-dir samples/train-detector --output-dir models/my-trained-model/ -op Adam -lr .001 -its 300000 -bs 64
+
+
+docker pull tensorflow/tensorflow                  # Download latest image
+docker run -it -p 8888:8888 tensorflow/tensorflow  # Start a Jupyter notebook server
+
+
+#Create swap
+
+sudo fallocate -l 1G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+sudo swapon /swapfile
