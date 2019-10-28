@@ -1,6 +1,6 @@
 #!/bin/bash
 
-check_file() 
+check_file()
 {
 	if [ ! -f "$1" ]
 	then
@@ -10,7 +10,7 @@ check_file()
 	fi
 }
 
-check_dir() 
+check_dir()
 {
 	if [ ! -d "$1" ]
 	then

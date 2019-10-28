@@ -18,7 +18,7 @@ def adjust_pts(pts,lroi):
 if __name__ == '__main__':
 
 	try:
-		
+        
 		input_dir  = sys.argv[1]
 		output_dir = input_dir
 
@@ -60,5 +60,3 @@ if __name__ == '__main__':
 		sys.exit(1)
 
 	sys.exit(0)
-
-
