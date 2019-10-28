@@ -3,3 +3,10 @@
 *.so
 *.csv
 data/
+*/fail
+samples/country/*.jpg
+samples/country/*.jpeg
+samples/country/video/*.mp4
+*.log
+venv/
+.vagrant/
